@@ -1,0 +1,286 @@
+:root {
+    --main-white: #f0f0f0;
+    --main-red: #be3144;
+    --main-blue: #45567d;
+    --main-gray: #303841;
+
+}
+
+/* all reset */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* root */
+html{
+    font-size: 1rem;
+}
+
+/* body */
+body {
+    width: 100%;
+    height: 100%;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    line-height: 1.4;
+
+}
+
+
+/* navbar start --------------------------------*/
+/*navbar-> .nav-list */
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: var(--main-red);
+    width: 100%;
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.5);
+}
+
+/* all ul */
+ul {
+    list-style: none;
+    
+}
+
+/* navbar ul--> li/a */
+.nav-list {
+    display: flex;
+    font-size: 1.4rem;
+    margin-right: 20px;
+    
+}
+
+/* all anchore a */
+a {
+    text-decoration: none;
+    color: white;
+
+}
+
+/* navbar a */
+.nav-list a {
+    display: block;
+    padding: 20px;
+}
+
+/* navbar a hover*/
+.nav-list a:hover {
+       background-color: #243659;
+   }
+
+
+/* navbar end */
+
+/* START welcome section -------------------------------- */
+/* welcome section-> h1, p */
+.welcome-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: var(--main-gray); */
+    background-image: linear-gradient(160deg, #360033 33%, #0b8793);
+    width: 100%;
+    height: 100vh;
+}
+
+/* all h1 */
+h1 {
+    font-size: 3.6rem;
+}
+
+/* welcome section p */
+.welcome-section > p {
+    color: var(--main-red);
+    font-size: 2rem;
+    font-style: italic;
+    font-weight: bold
+}
+
+
+/* all h1 , h2 */
+h1, h2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+}
+
+/* all p */
+p {
+    
+}
+/* END welcome section */
+
+
+/* START projects section --------------------------------*/
+/* projects section-> h2, .projects-grid, btn , btn-show all */
+.projects-section {
+    /* width: 100%; */
+    background-color: var(--main-blue);
+    text-align: center;
+    padding: 65px 50px;
+}
+
+/* proj-sec h2 */
+.projects-section-header {
+    font-size: 2.6rem;
+    max-width: 625px;
+    margin: 0 auto 60px;
+    border-bottom: 2px solid white;
+}
+
+/* proj-grid */
+.projects-grid {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 40px;
+}
+
+.project {
+    background-color: var(--main-gray);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    border: 0.5px solid black;
+}
+
+.project-title {
+    padding: 16px 0;
+    font-size: 1.2rem;
+}
+
+.project-img{
+    height: calc(100% - 4rem);
+    width: 100%;
+    /* display: block; */
+    object-fit: cover ;
+
+
+}
+
+.code {
+    color: var(--main-gray);
+    transition: 0.3s ease-in-out
+}
+
+.project:hover .code{
+    color: orange;
+}
+
+/* proj-btn */
+.btn-show-all {
+    background-color: var(--main-gray);
+    font-size: 1.3rem;
+}
+
+.btn-show-all:hover  {
+    background-color: var(--main-red);
+    transition: 0.3s ease-in-out;
+}
+
+/* proj-btn-icon */
+.btn-show-all > i {
+    margin-left: 10px;
+    transition: 0.3s ease-out;
+}
+
+.btn-show-all:hover > i {
+    transform: translateX(10px);
+    transition: 0.3s ease-out;
+}
+/* 
+
+/* btn for all */
+.btn{
+ padding: 10px 20px;
+ display: inline-block;
+ border-radius: 2px;
+}
+/* END projects section */
+
+/* till done */
+
+/* START contact section -------------------------------- */
+/* contact section-> header, links */
+.contact-section {
+    background-color: var(--main-gray);
+    background-image: linear-gradient(335deg, #360033 33%, #0b8793);
+    width: 100%;
+    height: 76vh;
+    min-height: 210px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding: 0 25px;
+}
+
+/* con-sec-header-> h2,p */
+.contact-section-header {
+    margin-top: 10vh;
+}
+
+/* con-sec-header h2*/
+.contact-section-header > h2 {
+    font-size: 3.7rem;
+}
+
+/* con-sec-header p*/
+.contact-section-header > p {
+    font-size: 1.2rem;
+    font-style: italic;
+}
+
+/* con-sec-link-> .contact-details(btn) */
+.contact-links {
+    align-self: end;
+    margin-bottom: 10vh;
+}
+
+/* con-det-btn-> i */
+.contact-details {
+    font-size: 1.5rem;
+    text-shadow: 2px 2px 1px #1f1f1f;
+    transition: 0.3s ease-out;
+    padding: 10px;
+}
+
+.contact-details:hover {
+    text-shadow: 3px 2px 20px rgb(167, 245, 238);
+    transform: translateY(5px);
+}
+
+/* i icon of contact links */
+/* i{} */
+/* END contact section */
+
+/* START footer setion -------------------------------- */
+/* footer section-> p,p/a */
+footer {
+    border-top: 4px solid var(--main-red);
+    background-color: var(--main-gray);
+    background-image: linear-gradient(160deg, #360033 33%, #0b8793);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    font-size: 1.1rem;
+    font-weight: 100;
+}
+
+/* footer p */
+footer > p {
+    margin: 20px;
+
+}
+
+/* footer a */
