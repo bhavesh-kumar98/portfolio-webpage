@@ -284,3 +284,146 @@ footer > p {
 }
 
 /* footer a */
+
+/* For tablets (landscape) and smaller */
+@media only screen and (max-width: 1024px) {
+    /* Adjustments for navbar */
+    .nav-list {
+        font-size: 1.2rem;
+        margin-right: 10px;
+    }
+
+    /* Adjustments for welcome section */
+    .welcome-section {
+        height: 80vh;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    .welcome-section > p {
+        font-size: 1.8rem;
+    }
+
+    /* Adjustments for projects section */
+    .projects-section-header {
+        font-size: 2.2rem;
+        margin-bottom: 40px;
+    }
+
+    .projects-grid {
+        grid-gap: 30px;
+    }
+
+    .project-title {
+        font-size: 1rem;
+    }
+
+    .btn-show-all {
+        font-size: 1.1rem;
+    }
+
+    .btn-show-all > i {
+        margin-left: 5px;
+    }
+
+    /* Adjustments for contact section */
+    .contact-section-header > h2 {
+        font-size: 3rem;
+    }
+
+    .contact-section-header > p {
+        font-size: 1rem;
+    }
+
+    .contact-details {
+        font-size: 1.3rem;
+    }
+
+    /* Adjustments for footer */
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer > p {
+        margin: 10px;
+    }
+}
+
+/* For mobile devices */
+@media only screen and (max-width: 768px) {
+    /* Adjustments for navbar */
+    .nav {
+        justify-content: center;
+    }
+
+    .nav-list {
+        font-size: 1rem;
+        margin-right: 0;
+    }
+
+    .nav-list a {
+        padding: 10px;
+    }
+
+    /* Adjustments for welcome section */
+    .welcome-section {
+        height: 70vh;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .welcome-section > p {
+        font-size: 1.5rem;
+    }
+
+    /* Adjustments for projects section */
+    .projects-section-header {
+        font-size: 2rem;
+        margin-bottom: 30px;
+    }
+
+    .projects-grid {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        grid-gap: 20px;
+    }
+
+    .project-title {
+        font-size: 1rem;
+    }
+
+    .btn-show-all {
+        font-size: 1rem;
+    }
+
+    .btn-show-all > i {
+        margin-left: 5px;
+    }
+
+    /* Adjustments for contact section */
+    .contact-section-header > h2 {
+        font-size: 2.5rem;
+    }
+
+    .contact-section-header > p {
+        font-size: 1rem;
+    }
+
+    .contact-details {
+        font-size: 1.2rem;
+        padding: 8px;
+    }
+
+    /* Adjustments for footer */
+    footer {
+        padding: 15px;
+    }
+
+    footer > p {
+        margin: 10px 0;
+    }
+}
